@@ -1,0 +1,6 @@
+super-easy	different
+easy 		server
+easy 		parking2
+medium 		lineup	
+medium		sumoftheothers
+hard		tritiling
