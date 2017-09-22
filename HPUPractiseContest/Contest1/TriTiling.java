@@ -8,11 +8,10 @@ import java.util.*;
 //Note that the 2 ways are the ways that cannot decompose to a smaller rectangle.
 
 // example of 1 way to build a 3 x 4 rectangle, the other one is just upsidedown.
-// ---------
+// _________
 // |___|___|
 // | |___| |
-// | |   | |
-// ---------
+// |_|___|_|
 
 class TriTiling {
 	public static void main(String[] args) {
