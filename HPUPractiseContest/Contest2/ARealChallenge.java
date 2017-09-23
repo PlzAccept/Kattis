@@ -4,7 +4,7 @@ import java.util.*;
 // Note that we need to use long because of the input size.
 
 class ARealChallenge {
-	public static void main(String[] args) {
-		System.out.println(4 * Math.sqrt(new Scanner(System.in).nextLong()));
-	}
+    public static void main(String[] args) {
+        System.out.println(4 * Math.sqrt(new Scanner(System.in).nextLong()));
+    }
 }

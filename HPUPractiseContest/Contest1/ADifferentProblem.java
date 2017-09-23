@@ -6,20 +6,20 @@ import java.util.*;
 
 class ADifferentProblem {
     public static void main(String[] args) {
-		Scanner in = new Scanner(System.in);
-		
-		//read until EOF
-		while(in.hasNext()) {
+        Scanner in = new Scanner(System.in);
+        
+        //read until EOF
+        while(in.hasNext()) {
 
-			//read two long  
-			long a = in.nextLong(); 
-			long b = in.nextLong();
+            //read two long  
+            long a = in.nextLong(); 
+            long b = in.nextLong();
 
-			//take the absolute different
-			long diff = (long)Math.abs(a - b);
+            //take the absolute different
+            long diff = (long)Math.abs(a - b);
 
-			//print the number out
-			System.out.println(diff);
-		}
-	}
+            //print the number out
+            System.out.println(diff);
+        }
+    }
 }

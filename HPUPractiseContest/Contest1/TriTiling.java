@@ -14,32 +14,32 @@ import java.util.*;
 // |_|___|_|
 
 class TriTiling {
-	public static void main(String[] args) {
-		Scanner in = new Scanner(System.in);
-		for(;;) {
-			int n = in.nextInt();
-			if(n == -1) break;
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        for(;;) {
+            int n = in.nextInt();
+            if(n == -1) break;
 
-			if(n % 2 == 1) System.out.println("0");  //If n is an odd number
-			else System.out.println(possTile(n, 0)); //If n is an even number
-		}
-	}
+            if(n % 2 == 1) System.out.println("0");  //If n is an odd number
+            else System.out.println(possTile(n, 0)); //If n is an even number
+        }
+    }
 
-	//n - the target rectangle width we want to achieve
-	//currentT - the current width of the rectangle we've made
-	public static int possTile(int n, int currentT) {
-		//base case, if we meet the target width, return 1
-		if(n == currentT) return 1;
+    //n - the target rectangle width we want to achieve
+    //currentT - the current width of the rectangle we've made
+    public static int possTile(int n, int currentT) {
+        //base case, if we meet the target width, return 1
+        if(n == currentT) return 1;
 
-		//The number of ways if we attach a 3 x 2 rectangle to the current one
-		int sum = 3 * possTile(n, currentT + 2);
+        //The number of ways if we attach a 3 x 2 rectangle to the current one
+        int sum = 3 * possTile(n, currentT + 2);
 
-		//adding the number of ways if we attach a 3 x 4, 3 x 6, .... 
-		//until the total width equals the target width
-		for(currentT += 4; currentT <= n;currentT += 2) 
-			sum += 2 * possTile(n, currentT);
+        //adding the number of ways if we attach a 3 x 4, 3 x 6, .... 
+        //until the total width equals the target width
+        for(currentT += 4; currentT <= n;currentT += 2) 
+            sum += 2 * possTile(n, currentT);
 
-		//return the total ways.
-		return sum;
-	}
+        //return the total ways.
+        return sum;
+    }
 }

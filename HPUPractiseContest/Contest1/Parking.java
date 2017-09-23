@@ -6,21 +6,21 @@ import java.util.*;
 
 class Parking {
     public static void main(String[] args) {
-		Scanner in = new Scanner(System.in);
-		int cases = in.nextInt();
-		while(cases-->0) {
-		    int n = in.nextInt();
-		    int max = 0, min = 100;
+        Scanner in = new Scanner(System.in);
+        int cases = in.nextInt();
+        while(cases-->0) {
+            int n = in.nextInt();
+            int max = 0, min = 100;
 
-		    //find out the location of left most store and the right most store
-		    while(n-->0) {
-		    	int x = in.nextInt();
-		    	max = Integer.max(x, max);
-		    	min = Integer.min(x, min);
-		    }
+            //find out the location of left most store and the right most store
+            while(n-->0) {
+                int x = in.nextInt();
+                max = Integer.max(x, max);
+                min = Integer.min(x, min);
+            }
 
-		    //take the difference and multiply two
-		    System.out.println((max - min) * 2);
-		}
+            //take the difference and multiply two
+            System.out.println((max - min) * 2);
+        }
     }
 }

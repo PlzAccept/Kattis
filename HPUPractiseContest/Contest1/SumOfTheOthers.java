@@ -7,15 +7,15 @@ import java.util.*;
 //Therefore 2*Xi = S  =>  Xi = S / 2
 
 class SumOfTheOthers {
-	public static void main(String[] args) {
-		Scanner in = new Scanner(System.in);
-		while(in.hasNext()) {
-			String[] line = in.nextLine().split(" ");
-			int sum = 0;
-			for(int i = 0; i < line.length; i++)
-				sum += Integer.parseInt(line[i]);
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        while(in.hasNext()) {
+            String[] line = in.nextLine().split(" ");
+            int sum = 0;
+            for(int i = 0; i < line.length; i++)
+                sum += Integer.parseInt(line[i]);
 
-			System.out.println(sum / 2);
-		}
-	}
+            System.out.println(sum / 2);
+        }
+    }
 }
